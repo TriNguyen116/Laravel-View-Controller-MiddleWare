@@ -1,15 +1,26 @@
-<h1>Hoc laravel</h1>
-<?php
-echo date('Y-m-d H:i:s');
-// echo env('APP_ENV');
-// echo config('app.env') // config/app.php --> serach: env 
+<!DOCTYPE html>
+<html lang="en">
 
-// if (env('APP_ENV') == 'production') {
-//   echo 'call api live';
-// } else {
-//   echo 'call api sandbox';
-// };
-// 
-?>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hoc Lap trinh can ban</title>
+</head>
 
-<a href="<?php echo route('admin.example', ['id' => 1, 'slg' => 'tin tuc']); ?>">xem tin tuc</a>
+<body>
+  <header>
+    <h1>HEADER - WEB</h1>
+    <h2>{{$title}}</h2>
+  </header>
+  <main>
+    <h1>Noi dung -Web</h1>
+    <h2><?php echo $content;
+        ?></h2>
+
+  </main>
+  <footer>
+    <h1>Footer - web</h1>
+  </footer>
+</body>
+
+</html>
